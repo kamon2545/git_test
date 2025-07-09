@@ -1,63 +1,110 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>โปรไฟล์ส่วนตัว</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ของฉัน</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: all 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #0dcaf0;
+            margin-bottom: 1rem;
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .profile-role {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .social-icons a {
+            font-size: 1.2rem;
+            margin: 0 10px;
+            color: #0dcaf0;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0aaec9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex justify-between items-center py-4">
-        <div class="text-xl font-bold text-gray-800">MyProfile</div>
-        <ul class="flex space-x-6 text-gray-700 font-medium">
-          <li><a href="#" class="hover:text-blue-600">หน้าแรก</a></li>
-          <li><a href="#" class="hover:text-blue-600">เกี่ยวกับ</a></li>
-          <li><a href="#" class="hover:text-blue-600">ติดต่อ</a></li>
-        </ul>
-      </div>
+<body>
+    <div class="profile-card">
+        <img src="https://i.pravatar.cc/150?img=12" alt="profile" class="profile-img">
+        <h2 class="profile-name">Gap Ch.</h2>
+        <p class="profile-role">Full Stack Developer</p>
+
+        <p class="mt-3 text-muted">👨‍💻 รักการสร้างระบบ ซ่อมคอมได้ วางระบบเป็น ❤️<br>Tech: Python, Django, Docker, JS</p>
+
+        <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
     </div>
-  </nav>
 
-  <!-- Profile Section -->
-  <div class="max-w-4xl mx-auto mt-10 bg-white rounded-xl shadow-md p-8">
-    <div class="flex items-center space-x-8">
-      <img src="https://i.pravatar.cc/150?img=32" alt="Profile" class="w-32 h-32 rounded-full shadow-md">
-      <div>
-        <h2 class="text-2xl font-semibold text-gray-800">นายนาวิน แสงสุวรรณ</h2>
-        <p class="text-gray-600">นักศึกษา | มหาวิทยาลัยเทคโนโลยีราชมงคล</p>
-        <p class="text-sm text-gray-500 mt-2">สนใจด้านความมั่นคงปลอดภัยไซเบอร์, เทคโนโลยีเว็บ และ UX/UI Design</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bio Section -->
-  <div class="max-w-4xl mx-auto mt-6 bg-white rounded-xl shadow p-6 space-y-4">
-    <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">เกี่ยวกับฉัน</h3>
-    <p class="text-gray-700 leading-relaxed">
-      ผมเป็นนักศึกษาที่สนใจการพัฒนาเว็บแอปพลิเคชันแบบ Full-Stack รวมถึงด้านความปลอดภัยทางไซเบอร์
-      ผมมีประสบการณ์ในการเขียนโปรแกรมด้วยภาษา PHP, JavaScript และใช้เครื่องมืออย่าง Docker, Git, Tailwind CSS
-    </p>
-    <p class="text-gray-700 leading-relaxed">
-      นอกจากนี้ผมยังสนใจด้านออกแบบ UX/UI และชอบเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ เป้าหมายของผมคือการเป็นนักพัฒนาที่สามารถสร้างระบบที่ทั้งสวยงาม ปลอดภัย และใช้งานง่าย
-    </p>
-  </div>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer class="bg-gray-900 mt-10">
-  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-    <div class="text-gray-300 text-sm">
-      © 2025 นายนาวิน แสงสุวรรณ. All rights reserved.
-    </div>
-    <div class="flex space-x-4 text-gray-300 text-sm">
-      <a href="#" class="hover:text-white">หน้าแรก</a>
-      <a href="#" class="hover:text-white">เกี่ยวกับ</a>
-      <a href="#" class="hover:text-white">ติดต่อ</a>
-    </div>
-  </div>
-</footer>
 
 </html>
