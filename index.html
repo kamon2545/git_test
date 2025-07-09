@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>โปรไฟล์ส่วนตัว</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>เพิ่ม 1</h1>
-    <h2>เพิ่ม 2</h2>
-    <p>เพิ่ม 3 ซ่าส์</p>
-    <p>เพิ่ม 5 ซ่าส์</p>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-xl font-bold text-gray-800">MyProfile</div>
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+          <li><a href="#" class="hover:text-blue-600">หน้าแรก</a></li>
+          <li><a href="#" class="hover:text-blue-600">เกี่ยวกับ</a></li>
+          <li><a href="#" class="hover:text-blue-600">ติดต่อ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="max-w-4xl mx-auto mt-10 bg-white rounded-xl shadow-md p-8">
+    <div class="flex items-center space-x-8">
+      <img src="https://i.pravatar.cc/150?img=32" alt="Profile" class="w-32 h-32 rounded-full shadow-md">
+      <div>
+        <h2 class="text-2xl font-semibold text-gray-800">นายนาวิน แสงสุวรรณ</h2>
+        <p class="text-gray-600">นักศึกษา | มหาวิทยาลัยเทคโนโลยีราชมงคล</p>
+        <p class="text-sm text-gray-500 mt-2">สนใจด้านความมั่นคงปลอดภัยไซเบอร์, เทคโนโลยีเว็บ และ UX/UI Design</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bio Section -->
+  <div class="max-w-4xl mx-auto mt-6 bg-white rounded-xl shadow p-6 space-y-4">
+    <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">เกี่ยวกับฉัน</h3>
+    <p class="text-gray-700 leading-relaxed">
+      ผมเป็นนักศึกษาที่สนใจการพัฒนาเว็บแอปพลิเคชันแบบ Full-Stack รวมถึงด้านความปลอดภัยทางไซเบอร์
+      ผมมีประสบการณ์ในการเขียนโปรแกรมด้วยภาษา PHP, JavaScript และใช้เครื่องมืออย่าง Docker, Git, Tailwind CSS
+    </p>
+    <p class="text-gray-700 leading-relaxed">
+      นอกจากนี้ผมยังสนใจด้านออกแบบ UX/UI และชอบเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ เป้าหมายของผมคือการเป็นนักพัฒนาที่สามารถสร้างระบบที่ทั้งสวยงาม ปลอดภัย และใช้งานง่าย
+    </p>
+  </div>
+
 </body>
+<footer class="bg-gray-900 mt-10">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <div class="text-gray-300 text-sm">
+      © 2025 นายนาวิน แสงสุวรรณ. All rights reserved.
+    </div>
+    <div class="flex space-x-4 text-gray-300 text-sm">
+      <a href="#" class="hover:text-white">หน้าแรก</a>
+      <a href="#" class="hover:text-white">เกี่ยวกับ</a>
+      <a href="#" class="hover:text-white">ติดต่อ</a>
+    </div>
+  </div>
+</footer>
+
 </html>
